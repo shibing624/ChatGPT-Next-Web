@@ -363,8 +363,8 @@ If you want to add a new translation, read this [document](./docs/translation.md
 
 ### Contributors
 
-<a href="https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ChatGPTNextWeb/ChatGPT-Next-Web" />
+<a href="https://github.com/shibing624/ChatGPT-Next-Web/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=shibing624/ChatGPT-Next-Web" />
 </a>
 
 ## LICENSE

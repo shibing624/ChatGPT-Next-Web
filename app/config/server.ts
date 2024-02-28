@@ -72,7 +72,9 @@ export const getServerSideConfig = () => {
   const randomIndex = Math.floor(Math.random() * apiKeys.length);
   const apiKey = apiKeys[randomIndex];
   console.log(
-    `[Server Config] using ${randomIndex + 1} of ${apiKeys.length} api key`,
+    `[Server Config] using ${randomIndex + 1} of ${
+      apiKeys.length
+    } api key, apiKeys: ${apiKeyEnvVar}`,
   );
 
   return {

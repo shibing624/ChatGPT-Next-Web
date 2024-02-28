@@ -155,10 +155,10 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          NextChat
+          ChatGPT
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+          Chat with AI assistant.
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -169,7 +169,7 @@ export function SideBar(props: { className?: string }) {
         <IconButton
           icon={<MaskIcon />}
           text={shouldNarrow ? undefined : Locale.Mask.Name}
-          className={styles["sidebar-bar-button"]}
+          className={`${styles["sidebar-bar-button"]} ${styles["hide"]}`}
           onClick={() => {
             if (config.dontShowMaskSplashScreen !== true) {
               navigate(Path.NewChat, { state: { fromHome: true } });
@@ -182,7 +182,7 @@ export function SideBar(props: { className?: string }) {
         <IconButton
           icon={<PluginIcon />}
           text={shouldNarrow ? undefined : Locale.Plugin.Name}
-          className={styles["sidebar-bar-button"]}
+          className={`${styles["sidebar-bar-button"]} ${styles["hide"]}`}
           onClick={() => showToast(Locale.WIP)}
           shadow
         />
@@ -211,7 +211,7 @@ export function SideBar(props: { className?: string }) {
               }}
             />
           </div>
-          <div className={styles["sidebar-action"]}>
+          <div className={`${styles["sidebar-action"]} ${styles["hide"]}`}>
             <Link to={Path.Settings}>
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
