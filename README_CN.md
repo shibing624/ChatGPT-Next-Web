@@ -167,7 +167,7 @@ BASE_URL=https://b.nextweb.fun/api/proxy
 > ⚠️ 注意：docker 版本在大多数时间都会落后最新的版本 1 到 2 天，所以部署后会持续出现“存在更新”的提示，属于正常现象。
 
 ```shell
-docker pull yidadaa/chatgpt-next-web
+docker pull shibing624/chatgpt-next-web
 
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY=sk-xxxx \

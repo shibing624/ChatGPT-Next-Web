@@ -269,7 +269,7 @@ yarn dev
 ### Docker (Recommended)
 
 ```shell
-docker pull yidadaa/chatgpt-next-web
+docker pull shibing624/chatgpt-next-web
 
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY=sk-xxxx \
